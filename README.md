@@ -1,4 +1,4 @@
-# ProjectB_COMP350
+# ProjectC_COMP350
 File Systems
 
 # Introduction
