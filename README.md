@@ -12,7 +12,7 @@ Jarrod LeComte
 
 # Step 1 – Jarrod LeComte, Read a file and print it
 
-•	Created a function readFile(char*, char*) which uses the readSector function to load the directory sector into a 512 byte array
+•	Created a function readFile(char*, char*) which uses the readSector function to load the directory sector into a 512 byte array     
 • If the file is not found, a "File Not Found" error message is produced
 
 # Step 2 – Thomas O’Leary, Load and execute a program
