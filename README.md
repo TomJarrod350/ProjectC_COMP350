@@ -17,21 +17,21 @@ Jarrod LeComte
 
 # Step 2 – Thomas O’Leary, Load and execute a program
 
-• Creates function executeProgram(char*) 
-• This function will utilize readFile(char*, char*) to load the file into a buffer and place it into the memory segment at 0x2000 through the putInMemory() function.
+• Creates function executeProgram(char*)      
+• This function will utilize readFile(char*, char*) to load the file into a buffer and place it into the memory segment at 0x2000 through the putInMemory() function.     
 • The assembly function launchProgram(segment) passes the segment 0x2000 as the parameter and is called using interrupt 0x21 
 
 # Step 3 – Thomas O'Leary, Terminate program
 
-• Creates function terminate() containing an infinite loop
+• Creates function terminate() containing an infinite loop     
 • In order to return to the OS, an interrupt 0x21 call is used to terminate the program
 
 # Step 4 – Thomas O'Leary, Creating the shell
 
-• This step creates the shell.c and userlib.asm files
-• userlib.asm contains a system call (syscall) which will be used in the shell to execute functions using interrupt 0x21
-• The shell contains an initial prompt[4] which includes "A:>" and returns a bad command message to be printed
-• In order to load an execute the shell, makeInterrupt21() was used and interrupt 0x21 to load and execute the shell
+• This step creates the shell.c and userlib.asm files     
+• userlib.asm contains a system call (syscall) which will be used in the shell to execute functions using interrupt 0x21     
+• The shell contains an initial prompt[4] which includes "A:>" and returns a bad command message to be printed     
+• In order to load an execute the shell, makeInterrupt21() was used and interrupt 0x21 to load and execute the shell     
 • a char shellname[] array was created to be passed to the executeProgram function
 
 
